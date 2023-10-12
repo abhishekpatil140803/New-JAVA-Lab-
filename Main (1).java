@@ -1,22 +1,19 @@
-class Data 
+class finalkeyword2
+ 
 {
-    private String name;
-    public void setter(String s)
-    {
-        name=s;
+    public final void display(){
+     System.out.println("This is a final method.");   
     }
-    public void getter()
-    {
-    System.out.println(name);
-    System.out.println("java");
-    }
+    
 }
-public class Main
-{
-	public static void main(String[] args)
+class main extends finalkeyword2{
+     public final void display(){
+        System.out.println("This final method is overridden.");   
+}
+	public static void main(String[] args) 
 	{
-	Data d= new Data();
-	d.setter("programiz");
-	d.getter();
+	   main obj = new main();
+	   obj.display();
 	}
 }
+
