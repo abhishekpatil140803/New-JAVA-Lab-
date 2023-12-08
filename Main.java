@@ -1,10 +1,16 @@
-class finalkeyword
- 
-{
-	public static void main(String[] args) 
-	{
-	    final int AGE = 32;
-	    AGE=45;
-		System.out.println("Age:"+AGE);
-	}
+//finally block
+class Main{
+    public static void main(String[] args)
+    {
+    try{
+        int divideByzero=5/1;
+    }
+
+    catch(ArithmeticException e){
+        System.out.println("ArithmeticException=>"+e.getMessage());
+    }
+    finally{
+         System.out.println("This is final block");
+    }
+    }
 }
