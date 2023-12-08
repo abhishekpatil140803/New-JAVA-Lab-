@@ -1,3 +1,4 @@
+//one try Multiple catch 
 import java.util.Scanner;
 public class Test{
     public static void main(String[] args)
@@ -8,7 +9,7 @@ public class Test{
         if(99%n==0)
        System.out.println("is a factor of 99");
     }
-    
+
     catch (ArithmeticException ex){
         System.out.println("Arithmetic"+ex);
     }
